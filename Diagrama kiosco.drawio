@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2023-08-22T22:32:39.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203" etag="VD7MPEFCcSatrYMHivvP" version="21.6.8" type="github">
+  <diagram name="Página-1" id="Gk6psygGGL4AzUaFjNAg">
+    <mxGraphModel dx="785" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-5" value="venta" style="swimlane;fontStyle=1;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="160" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-6" value="-articulo:Articulos[]&lt;br&gt;-fecha: int&lt;br&gt;-horario de venta:int&lt;br&gt;-vendedor:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="okGUDs1a5lsQk_dVC0ob-5" vertex="1">
+          <mxGeometry y="30" width="240" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="okGUDs1a5lsQk_dVC0ob-5" vertex="1">
+          <mxGeometry y="114" width="240" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-20" value="+calcular montos():double" style="text;html=1;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="okGUDs1a5lsQk_dVC0ob-5" vertex="1">
+          <mxGeometry y="130" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-9" value="Articulo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="60" width="210" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-10" value="-nombre :String&lt;br&gt;-provedor :String&lt;br&gt;-precio:Double&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="okGUDs1a5lsQk_dVC0ob-9" vertex="1">
+          <mxGeometry y="40" width="210" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="okGUDs1a5lsQk_dVC0ob-9" vertex="1">
+          <mxGeometry y="184" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-22" value="Empleado" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="340" width="300" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-23" value="-nombre:String&lt;br&gt;-horarioDeEntrada:LocateDate&amp;nbsp;&lt;br&gt;-horarioDeSalida:LocateDate" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="okGUDs1a5lsQk_dVC0ob-22" vertex="1">
+          <mxGeometry y="26" width="300" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="okGUDs1a5lsQk_dVC0ob-22" vertex="1">
+          <mxGeometry y="170" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="okGUDs1a5lsQk_dVC0ob-25" value="+registrarVenta ( ventaVenta&amp;nbsp; ):double&lt;br&gt;+&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="okGUDs1a5lsQk_dVC0ob-22" vertex="1">
+          <mxGeometry y="178" width="300" height="82" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
