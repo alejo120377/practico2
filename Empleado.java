@@ -8,15 +8,15 @@ public class Empleado {
 
     private String nombre;
     private String apellido;
-    private LocalDateTime horarioDeEntrada;
-    private LocalDateTime horarioDeSalida;
+    private String dni;
 
+    public Empleado() {
+    }
 
-    public Empleado(String nombre, String apellido, LocalDateTime horarioDeEntrada, LocalDateTime horarioDeSalida) {
+    public Empleado(String nombre, String apellido, String dni) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.horarioDeEntrada = horarioDeEntrada;
-        this.horarioDeSalida = horarioDeSalida;
+        this.dni = dni;
     }
 
     public String getNombre() {
@@ -35,30 +35,19 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public LocalDateTime getHorarioDeEntrada() {
-        return horarioDeEntrada;
+    public String getDni() {
+        return dni;
     }
 
-    public void setHorarioDeEntrada(LocalDateTime horarioDeEntrada) {
-        this.horarioDeEntrada = horarioDeEntrada;
+    public void setDni(String dni) {
+        this.dni = dni;
     }
+    public Venta vender(ArrayList<Articulo>listaArticulos){
+         return  new Venta(listaArticulos,LocalDateTime.now(),this);
 
-    public LocalDateTime getHorarioDeSalida() {
-        return horarioDeSalida;
+
     }
-
-    public void setHorarioDeSalida(LocalDateTime horarioDeSalida) {
-        this.horarioDeSalida = horarioDeSalida;
-    }
-
-    public Venta  vender (ArrayList<Articulo>listaArticulos){
-        Venta  venta =new Venta();
-
-
-
-
-
-
+}
 
 
 

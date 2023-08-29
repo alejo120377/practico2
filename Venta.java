@@ -5,16 +5,16 @@ import java.util.ArrayList;
 
 public class Venta {
 
-private ArrayList<Articulo> listaArticulos;
-private LocalDateTime FechaVenta;
-private LocalDateTime HorarioVenta ;
- private String  Empleado;
+ private ArrayList<Articulo> listaArticulos;
+ private LocalDateTime fechaHora;
 
- public Venta() {
+ private Empleado Empleado;
+
+ public Venta(ArrayList<Articulo> listaArticulos, LocalDateTime fechaHora, Empleado empleado) {
   this.listaArticulos = listaArticulos;
-  FechaVenta = fechaVenta;
-  HorarioVenta = horarioVenta;
+  this.fechaHora = fechaHora;
   Empleado = empleado;
+
  }
 
  public ArrayList<Articulo> getListaArticulos() {
@@ -25,28 +25,24 @@ private LocalDateTime HorarioVenta ;
   this.listaArticulos = listaArticulos;
  }
 
- public LocalDateTime getFechaVenta() {
-  return FechaVenta;
+ public LocalDateTime getFechaHora() {
+  return fechaHora;
  }
 
- public void setFechaVenta(LocalDateTime fechaVenta) {
-  FechaVenta = fechaVenta;
+ public void setFechaHora(LocalDateTime fechaHora) {
+  this.fechaHora = fechaHora;
  }
 
- public LocalDateTime getHorarioVenta() {
-  return HorarioVenta;
- }
-
- public void setHorarioVenta(LocalDateTime horarioVenta) {
-  HorarioVenta = horarioVenta;
- }
-
- public String getEmpleado() {
+ public kiosco.Empleado getEmpleado() {
   return Empleado;
  }
 
- public void setEmpleado(String empleado) {
+ public void setEmpleado(kiosco.Empleado empleado) {
   Empleado = empleado;
  }
 }
+
+
+
+
 

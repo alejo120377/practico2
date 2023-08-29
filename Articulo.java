@@ -2,14 +2,16 @@ package kiosco;
 
 public class Articulo {
 
-private String nombre ;
-private String prveedor;
-private Double precio;
+    private String nombre;
+    private int codigo;
+    private Double precio;
+    private String marca;
 
-    public Articulo(String nombre, String prveedor, Double precio) {
+    public Articulo(String nombre, int codigo, Double precio, String marca) {
         this.nombre = nombre;
-        this.prveedor = prveedor;
+        this.codigo = codigo;
         this.precio = precio;
+        this.marca = marca;
     }
 
     public String getNombre() {
@@ -20,12 +22,12 @@ private Double precio;
         this.nombre = nombre;
     }
 
-    public String getPrveedor() {
-        return prveedor;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setPrveedor(String prveedor) {
-        this.prveedor = prveedor;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public Double getPrecio() {
@@ -34,5 +36,13 @@ private Double precio;
 
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 }
