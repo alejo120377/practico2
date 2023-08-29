@@ -1,5 +1,7 @@
 package kiosco;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -46,7 +48,20 @@ public class Empleado {
          return  new Venta(listaArticulos,LocalDateTime.now(),this);
 
 
-    }
+    } public void imprimirTicket() throws IOException {
+    FileWriter escritor = new FileWriter("./"+ LocalDateTime.now().getYear()+"-"+LocalDateTime.now().getMonthValue()+"-"
+            +LocalDateTime.now().getDayOfMonth()+"-"+LocalDateTime.now().getHour()+"-"+LocalDateTime.now().getMinute()+"-"+LocalDateTime.now().getSecond()
+            +"-"+".ticket",false);
+
+
+    escritor.write(out);
+    escritor.close();
+
+}
+
+
+
+
 }
 
 
